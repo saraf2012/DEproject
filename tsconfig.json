@@ -1,0 +1,13 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/**/*", "tests/**/*.ts", "vite.config.ts", "playwright.config.ts", "e2e/**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "verbatimModuleSyntax": false,
+    "types": ["node"],
+    "ignoreDeprecations": "6.0"
+  }
+}
